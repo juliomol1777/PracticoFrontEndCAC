@@ -1,0 +1,297 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1, h2, h4{
+    
+    font-family: 'Farro', sans-serif;
+}
+
+/*Estilos del header y nav*/
+header{
+    background-color: #a51492;
+    display: flex;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 480px){
+    header{
+        font-size: 1.5rem;
+        
+    }
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 4rem;;
+}
+
+ul li{
+    margin: 1rem;
+    border-radius: 10%;
+}
+
+ul li:hover{
+    background-color: black;
+}
+
+header img{
+    border-radius: 50%;
+}
+
+header a{
+    color: beige;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+/*Estilos del titulo principal dentro del body*/
+.texto-titulo{
+    margin: 3rem 8rem;
+    color: rgb(248, 152, 243);
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #a51492;
+    border-style: ridge;
+    border-radius: 100%;
+}
+
+/*Estilos de las categorias de productos*/
+.cards-categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding: 0 1.5rem;
+}
+
+figure img{
+    display: block;
+    width: 100%;
+    height: 25rem;
+    border-radius: 5%;
+}
+
+@keyframes cambiarFondo{
+    from{background-color: #a51492;}
+    to{background-color: black;}
+}
+
+.tarjeta{
+    width: 30%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #a51492;
+    border-radius: 5%;
+    
+}
+
+.tarjeta:hover{
+    animation: cambiarFondo 3s linear ;
+}
+
+@media only screen and (max-width: 700px) {
+    .tarjeta {
+      width: 45%;
+    }
+    .texto-titulo{
+        font-size: 1.5rem;
+    }
+  }
+  
+@media only screen and (max-width: 500px) {
+    .tarjeta {
+        width: 90%;
+    }
+    .texto-titulo{
+        font-size: 1.2rem;
+    }
+}
+
+.tarjeta a{
+    text-decoration: none;
+}
+
+/*Estilos de los detalles de cada producto*/
+.productos-categorias{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .productos-skills ul, .medios-pago  {
+      font-size: 1rem;
+    }
+  }
+
+.detalles-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.tarjeta-productos{
+    flex: 40%;
+    margin: 1rem;
+    padding: 2rem;
+    border: 1rem solid #a51492;
+    border-radius: 5%;
+}
+
+.medios-pago{
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: left;
+    padding: 1rem;
+}
+.medios-pago img{
+    display: inline;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5%;
+}
+
+.productos-skills ul{
+    font-size: 2rem;
+    list-style-type: none;
+}
+
+/*Estilos del footer*/
+footer{
+    background-color: #a51492;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer__contenedor{
+    padding: 1rem;
+    justify-content: center;
+}
+
+footer a{
+    justify-content: right;
+    padding: 1rem;
+    
+}
+
+/*Estilos del carrusell de bootstrap*/
+.carousel{
+    width: 80%;
+    padding: 2rem;
+    margin: auto;
+}
+
+/*Estilos del formulario*/
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin:auto;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 2rem;
+    color: white ;
+    font-style: italic; 
+}
+
+input[type=submit] {
+    background-color: #a51492;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:auto;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container-form {
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.form-titulo{
+    font-size: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    color:white;
+}
+
+.seccion-form{
+    background-image:url("celulares.jpg");
+}
+
+/*Estilos para los iframe mapas*/
+
+.contenedor-mapas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mapas{
+    flex: 40%;
+    height: 30rem;
+    padding: 5rem;
+    margin-bottom: 10rem;
+    justify-content: center;  
+}
+
+.mapas iframe{
+    display: block;
+    width: 100%;
+    height: 20rem;
+    border-radius: 5%;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.mapas p{
+    font-size: 1.5rem;
+    height: 5rem;
+    color:orchid;
+    padding: 2rem;
+}
+
+.titulo-mapas{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.titulo-mapas h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #a51492;
+    margin-top: 2rem;
+}
+
+.titulo-mapas p{
+    font-size: 2rem;
+    padding: 5rem;
+}
+
+
+
